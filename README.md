@@ -22,7 +22,7 @@ The purpose of this project is to collect, work with, and clean a data set. The 
 
 2) 	CodeBook.md – This document explains the project in detail. It explains the source information and explains the dataset variables. The Data extraction and Tranformation is explained in detail with the tablename and variables names in order to generate a tidy data set.
 
-3) 	Run_analysis.R – R script file that loads the raw dataset, merges the dataset, applies descriptive names and labels the variables appropriately. Finds the mean of the measurements based on subject and activity and creates a tidy data set.
+3) 	Run_analysis.r – R script file that loads the raw dataset, merges the dataset, applies descriptive names and labels the variables appropriately. Finds the mean of the measurements based on subject and activity and creates a tidy data set.
 
 4) 	Tidy_Averagedata.txt – The tidy data set that got generated post Data Transformation.
 
