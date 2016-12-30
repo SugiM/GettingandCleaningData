@@ -1,4 +1,4 @@
-#Code Book – Getting and Cleaning Data project
+#Code Book â€“ Getting and Cleaning Data project
 
 ##Project Overview:
 - - - - - - - - - - - - - - - - - - - - 
@@ -104,54 +104,55 @@ The scope of the project is extracting the data which has measurements on the me
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 - Load Raw Data Sets
 
-	1.The Training data set is loaded into table ‘ train’
+	1.The Training data set is loaded into table â€˜ trainâ€™
 
-	2.Testing data set is loaded into table  ‘test’
+	2.Testing data set is loaded into table  â€˜testâ€™
 
-	3.The features data is loaded into table – ‘features’
+	3.The features data is loaded into table â€“ â€˜featuresâ€™
 
 - Extract mean and standard deviation variables
 
-	4.Extract only the features that has the description as mean and standard deviation in their variables  by searching for that description and load into table ‘ features_mean_std’
+	4.Extract only the features that has the description as mean and standard deviation in their variables  by searching for that description and load into table â€˜ features_mean_stdâ€™
 
-	5.Extract only those subset of data from ’train’ and ‘test’ where the columns match the columns in ‘features_mean_Std’ 
+	5.Extract only those subset of data from â€™trainâ€™ and â€˜testâ€™ where the columns match the columns in â€˜features_mean_Stdâ€™ 
 
 - Merge training and test sets
-	6.Merge the extracted subset of data from table ‘train’ and table ‘test’ into ‘TrainTest’
+
+	6.Merge the extracted subset of data from table â€˜trainâ€™ and table â€˜testâ€™ into â€˜TrainTestâ€™
 
 - Label variables appropriately
 
-	7.Get the Feature Description from ‘features_mean_std’ and load into ‘features_mean_std_desc’. This is required to label the columns.
+	7.Get the Feature Description from â€˜features_mean_stdâ€™ and load into â€˜features_mean_std_descâ€™. This is required to label the columns.
 
 	8.Clean up the description by correcting the description of mean, std by removing special characters, so the description looks tidy.
 
-	9.Update the column names of the merged data ‘Traintest’ using the cleaned up ‘features_mean_std_desc’
+	9.Update the column names of the merged data â€˜Traintestâ€™ using the cleaned up â€˜features_mean_std_descâ€™
 
 - Use descriptive activity names
 
-	10.Load activities data  from Training data set into ‘TrainActivities’ and Testing dataset into ‘TestingActivities’
+	10.Load activities data  from Training data set into â€˜TrainActivitiesâ€™ and Testing dataset into â€˜TestingActivitiesâ€™
 
-	11.	Combine the two Activities ‘TrainActivities’ and ‘TestingActivities’ data into ‘TrainTestActivities’
+	11.Combine the two Activities â€˜TrainActivitiesâ€™ and â€˜TestingActivitiesâ€™ data into â€˜TrainTestActivitiesâ€™
 
-	12.Load the activities label data into ‘activityLabels’
+	12.Load the activities label data into â€˜activityLabelsâ€™
 
-	13.Rename the first column of ‘TrainTestActivities’ to ‘activity’
+	13.Rename the first column of â€˜TrainTestActivitiesâ€™ to â€˜activityâ€™
 
-	14.Update the column values of activity column in ‘TrainTestActivities’ data with the values from ‘activityLabels’ data to have descriptive values for the activity
+	14.Update the column values of activity column in â€˜TrainTestActivitiesâ€™ data with the values from â€˜activityLabelsâ€™ data to have descriptive values for the activity
 
-	15.Load the Subjects data from Training into ‘TrainSubjects’	 and load the subjects data from Testing into ‘TestSubjects’
+	15.Load the Subjects data from Training into â€˜TrainSubjectsâ€™	 and load the subjects data from Testing into â€˜TestSubjectsâ€™
 
-	16.Combine the two subjects data ‘TrainSubjects ‘ and ‘TestSubjects’ into ‘TrainTestSubjects’
+	16.Combine the two subjects data â€˜TrainSubjects â€˜ and â€˜TestSubjectsâ€™ into â€˜TrainTestSubjectsâ€™
 
-	17.Rename the column in ‘TrainTestSubjects’ to ‘subject’
+	17.Rename the column in â€˜TrainTestSubjectsâ€™ to â€˜subjectâ€™
 
-	18.Combine ‘TrainTestSubjects’, TrainTestActivities’ with Traintest’ data into ‘AlltransformedData’
+	18.Combine â€˜TrainTestSubjectsâ€™, TrainTestActivitiesâ€™ with Traintestâ€™ data into â€˜AlltransformedDataâ€™
 
 - Create a tidy data set	
 
-	19.Calculate the mean of the measurements in ‘AlltransformedData’ into ‘Tidy_AverageData’
+	19.Calculate the mean of the measurements in â€˜AlltransformedDataâ€™ into â€˜Tidy_AverageDataâ€™
 
-	20.Write the ‘Tidy_AverageData’ into a  ‘Tidy_Averagedata.txt’
+	20.Write the â€˜Tidy_AverageDataâ€™ into a  â€˜Tidy_Averagedata.txtâ€™
 
 ##Tidy Output Dataset:
 - - - - - - - - - - - - - - - - - - - - - 
